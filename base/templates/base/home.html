@@ -1,0 +1,215 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/swiper-home.css' %}">
+
+{% endblock css %}
+{% block content %}
+
+<section class="hero-section">
+    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+    centered-slides="true" autoplay-delay="7000" autoplay-disable-on-interaction="false">
+    <swiper-slide>
+        <img src="https://cdn.pixabay.com/photo/2023/03/31/14/39/ocean-7890172_960_720.jpg" alt="">
+    </swiper-slide>
+    <swiper-slide>
+        <img src="https://cdn.pixabay.com/photo/2023/04/02/03/24/lakeshore-7893531_960_720.jpg" alt="">
+    </swiper-slide>
+    <swiper-slide>
+        <img src="https://cdn.pixabay.com/photo/2023/04/10/10/19/mountain-7913365_960_720.jpg" alt="">
+    </swiper-slide>
+    <swiper-slide>
+        <img src="https://cdn.pixabay.com/photo/2023/04/04/05/17/vietnam-7898501_960_720.jpg" alt="">
+    </swiper-slide>
+    <div class="autoplay-progress" slot="container-end">
+        <svg viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="20"></circle>
+        </svg>
+        <span></span>
+      </div>
+    
+   
+  </swiper-container>
+</section>
+
+<div class="section-container">
+<section class="about-section body-section">
+    <div class="section-title">
+        <h2>About Company</h2>
+    </div>
+    <div class="about-container">
+        <div class="about-left">
+            <p>
+                Inner Saraj Farmer Producer Company Limited is a Private Company, 
+                Which CIN Number is U01100HP2021PTC008374 , was incorporated  on dated 19-Feb-2021 . Inner Saraj Farmer Producer Company Limited is classified as Non-govt company and is registered at 
+                Registrar of Companies located in ROC-HIMACHALPRADESH. As regarding the
+                 financial status on the time of registration of Inner Saraj Farmer Producer Company Limited Company its authorized share capital is Rs. 
+                1500000 and its paid up capital is Rs. 100000.
+            </p>
+            <div class="btn">
+                Know More
+            </div>
+        </div>
+
+        <div class="about-right">           
+            <img src="https://cdn.pixabay.com/photo/2023/03/31/18/44/hiking-7890733_960_720.jpg" alt="">
+
+        </div>
+    </div>
+</section>
+
+<section class="service body-section">
+    <div class="section-title">
+        <h2>Cold storage service</h2>
+    </div>
+
+    <div class="section-intro">
+        <p>
+            Keep your agricultural products fresh and in optimal
+             condition with our temperature-controlled cold storage facilities.
+              Our flexible rental options and affordable rates make 
+            it easy to store your products for the short or long term.
+            Our cold storage services provide versatile storage options 
+            for a wide range of agricultural products, from fruits and
+             vegetables to meats and dairy products.
+        </p>
+    </div>
+
+    <div class="service-container">
+        <div class="service-item">
+               <div class="service-info">
+                <div class="service-title">
+                    <h3>cold store large size</h3>
+                </div>
+                <ul class="service-points">
+                    <li><i class="fa-solid fa-circle-check"></i> Temperature-controlled storage:</li>
+                    <li><i class="fa-solid fa-circle-check"> </i>Versatile storage options:</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Flexible rental options</li>
+                    <li> <i class="fa-solid fa-circle-check"></i>Affordable rates</li>
+                </ul>
+               </div>
+               <div class="servic-img">
+                <img src="https://apal.org.au/wp-content/uploads/2019/08/Apples-in-cold-storage-DSC_9302-web.jpg" alt="">
+               </div>
+               <div class="btn btn-full">
+                Learn More
+               </div>
+        </div>
+        <div class="service-item">
+            <div class="service-info">
+                <div class="service-title">
+                    <h3>cold store large size</h3>
+                </div>
+                <ul class="service-points">
+                    <li><i class="fa-solid fa-circle-check"></i> Temperature-controlled storage:</li>
+                    <li><i class="fa-solid fa-circle-check"> </i>Versatile storage options:</li>
+                    <li><i class="fa-solid fa-circle-check"></i>Flexible rental options</li>
+                    <li> <i class="fa-solid fa-circle-check"></i>Affordable rates</li>
+                </ul>
+               </div>
+            <div class="service-img">
+            <img src="https://5.imimg.com/data5/IQ/SV/IC/SELLER-485160/apple-degreening-cold-storage-room-1000x1000.JPG" alt=""> 
+            </div>
+            <div class="btn btn-full">
+                Learn More
+               </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="rental-products body-section">
+    <div class="section-title">
+        <h2>
+            Equipment Rental
+        </h2>
+    </div>
+
+    <div class="rental-item-container">
+        <div class="rental-item">
+            <img src="https://m.media-amazon.com/images/I/81WMYDCU30L._SL1500_.jpg" alt="">
+
+            <div class="rental-item--info">
+                <h3 class="item-title">
+                    Power Sprayer
+                </h3>
+            </div>
+            <div class="btn btn-mid">
+                Learn More
+            </div>
+        </div>
+
+
+        <div class="rental-item">
+            <img src="https://www.vsttractors.com/sites/default/files/styles/product_listing/public/2021-12/95_listing.png?itok=ZsVTKF06" alt="">
+
+            <div class="rental-item--info">
+                <h3 class="item-title">
+                    Power Tiller
+                </h3>
+            </div>
+            <div class="btn btn-mid">
+                Learn More
+            </div>
+        </div>
+
+
+        <div class="rental-item">
+            <img src="https://5.imimg.com/data5/KZ/LT/UW/IOS-4151186/product-jpeg-500x500.png" alt="">
+
+            <div class="rental-item--info">
+                <h3 class="item-title">
+                    Power Chain Saw
+                </h3>
+            </div>
+            <div class="btn btn-mid">
+                Learn More
+            </div>
+        </div>
+        <div class="rental-item">
+            <img src="https://m.media-amazon.com/images/I/51gx2huRGZL._SL1107_.jpg" alt="">
+
+            <div class="rental-item--info">
+                <h3 class="item-title">
+                    Grass Cutter
+                </h3>
+            </div>
+            <div class="btn btn-mid">
+                Learn More
+            </div>
+        </div>
+
+        <div class="rental-item">
+            <img src="https://m.media-amazon.com/images/I/61PfySaqLzL._SL1500_.jpg" alt="">
+
+            <div class="rental-item--info">
+                <h3 class="item-title">
+                    Earth Auger
+                </h3>
+            </div>
+            <div class="btn btn-mid">
+                Learn More
+            </div>
+        </div>
+        <div class="rental-item">
+            <img src="https://m.media-amazon.com/images/I/81WMYDCU30L._SL1500_.jpg" alt="">
+
+            <div class="rental-item--info">
+                <h3 class="item-title">
+                    Power Sprayer
+                </h3>
+            </div>
+            <div class="btn btn-mid">
+                Learn More
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+{% endblock content %}
+
+{% block scripts %}
+<script src="{% static 'js/home-swiper.js' %}"></script>
+{% endblock scripts %}
