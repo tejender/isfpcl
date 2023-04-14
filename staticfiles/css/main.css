@@ -3,6 +3,7 @@
     margin:0;
   }
 
+  
 
   .section-container{
     display: flex;
@@ -142,16 +143,21 @@ img{
   }
 
  
-
+section.rental-products{
+    position: relative;
+    
+}
   .rental-item-container{
+    position: relative;
     display: flex;    
-    justify-content: space-between;
+   justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 30px;
+  
   }
 
   .rental-item{
-    width: 30%;
+    width: 400px;
     display: flex;
     flex-direction: column;
     gap: 20px;

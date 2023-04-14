@@ -35,11 +35,23 @@
      /* font-size: 1.5rem;    */
     }
 
-   
-    .rental-item-container .rental-item{
+    .rental-item-container{
+        overflow-x: scroll;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: start;
         width: 100%;
+  
+        
+      
+    }
+    .rental-item-container .rental-item{
+        min-width: 100%;
         border-bottom: 1px solid rgba(158, 155, 155, 0.596);
         padding-bottom: 20px;
+       
+        
+        
       
     }
     
