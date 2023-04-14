@@ -1,0 +1,33 @@
+@media screen and (max-width: 768px) {
+    .about-container,.service-container{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .about-left,.about-right{
+        width: 100%;
+       
+    }
+
+    .service-container{
+        row-gap: 20px;
+    }
+    .service-container .service-item{
+        flex-direction: column;
+        width: 100%;
+    }
+    .section-intro{
+        display: none;
+    }
+
+    .section-title h2{
+     /* font-size: 1.5rem;    */
+    }
+
+    .rental-item{
+        width: 100%;
+    }
+    
+}
+
+    
