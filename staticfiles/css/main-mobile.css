@@ -1,12 +1,23 @@
 @media screen and (max-width: 768px) {
+
+    .section-container{
+        gap: 0px;
+    }
     .about-container,.service-container{
         flex-direction: column;
         width: 100%;
         
     }
-    .about-left,.about-right{
+    .about-left{
         width: 100%;
        
+    }
+    .about-left .btn{
+        width: 95%;
+        text-align: center;
+    }
+    .about-right{
+        display: none;
     }
 
     .service-container{
@@ -24,10 +35,21 @@
      /* font-size: 1.5rem;    */
     }
 
-    .rental-item{
+   
+    .rental-item-container .rental-item{
         width: 100%;
+        border-bottom: 1px solid rgba(158, 155, 155, 0.596);
+        padding-bottom: 20px;
+      
     }
     
+    .service-item{
+        border-bottom: 1px solid rgba(158, 155, 155, 0.596);
+        padding-bottom: 20px;
+    }
+    .service-title h3{
+        font-size: 1.3rem;
+    }
 }
 
     
