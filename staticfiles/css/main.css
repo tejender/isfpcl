@@ -193,6 +193,141 @@ section.rental-products{
   }
 
 
+/* contact-page */
+
+section.body-section.contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.contact .contact-info{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.contact .section-title h2{
+  width: 50%;
+  color: #06150A;
+  font-family: 'Lato',sans-serif;
+  text-transform: capitalize;
+
+}
+
+.contact .contact-info ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact .contact-info ul li{
+  display: flex;
+  gap: 20px;
+  font-size: 1.2rem;
+  color: #615f5f;
+  font-family: sans-serif;
+}
+
+.contact .contact-info ul li span{
+ display: flex;
+ flex-direction: column;
+}
+
+.contact .contact-info ul li i{
+  font-size: 2rem;
+}
+
+
+.contact .map-location{
+  width: 60%;
+  height: 400px;
+}
+
+.contact .map-location iframe{
+  width: 100%;
+  height: 100%;
+
+  border-radius: 5px;
+}
+
+
+.body-section.faq{
+  /* width: 90%; */
+ 
+  width: 90%;
+  justify-content: start;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+
+.faq .section-title h2{
+  
+  color: #06150A;
+  font-family: 'Lato',sans-serif;
+  text-transform: capitalize;
+}
+
+/* faq section */
+
+.boxaccordion{
+  width: 100%;
+}
+
+.containerwidth {
+  width: 100%;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.toggle,
+.content {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.toggle {
+  width: 100%;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 16px;
+  color: rgb(9, 124, 44);
+  font-weight: 600;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 0;
+  
+}
+.content {
+  position: relative;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 30px;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
 
 /* footer section */
 

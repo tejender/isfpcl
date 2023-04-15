@@ -1,0 +1,145 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+<section class="contact-hero">
+    <img src="https://demo.bravisthemes.com/agria/wp-content/uploads/2022/12/contacts-bg-01.jpg" alt="">
+</section>
+
+
+<section class="body-section contact">
+    <div class="contact-info">
+        <div class="section-title">
+            <h2>
+                We are here to help you
+            </h2>
+        </div>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                     <span><b>Phone</b>
+                        +91 1234567890
+                    </span> 
+                </li>
+                <li>
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span><b>Mail</b>
+                        company@xyz.com
+                    </span> 
+                </li>
+                <li>
+                    <i class="fa-solid fa-location-dot"></i> 
+                    <span>
+                        <b>Address</b>
+                        25 Euclid Avenue NE, Albuquer, 83106 United States
+                    </span> 
+                </li>
+                
+               
+             </ul>
+
+             
+        
+    </div>
+
+    <div class="map-location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2954.261047536448!2d77.35359333559718!3d31.647108141234394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3905ad6c631e7ec5%3A0x901cd655b0de8b6d!2sInner%20saraj%20farmer%20producer%20company%20ltd!5e1!3m2!1sen!2sin!4v1681542974945!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    
+</section>
+
+<section class="body-section faq" >
+   
+        <div class="section-title">
+            <h2>
+                Answers to Commonly Asked Questions
+            </h2>
+        </div>
+        <div class="section-intro">
+            <p>
+                We understand that you may have questions about our products, 
+                services, or processes. That's why we've put together this helpful 
+                resource to provide answers to some of
+                 the most commonly asked questions we receive
+            </p>
+        </div>
+    
+    <div class="boxaccordion">
+        <div class="containerwidth">
+            <div class="wrapper">
+                <button class="toggle">How FAQs Accordion help us to rank our website?<i class="fas fa-plus icon"></i></button>
+                <div class="content">
+                    <p>FAQs accordion is a great way to help you build authority and trust, and at the same time bestow a bit of personality on the website. It also helps you answer frequently asked questions, produce additional content quickly, and reduce bounce rates.</p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <button class="toggle">What is the benefits of FAQs Accordion in blogger?<i class="fas fa-plus icon"></i></button>
+                <div class="content">
+                    <p>Benefit of FAQs accordion  for blogger is that it helps your blog visitors to find what they are looking for in less time.</p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <button class="toggle">Does FAQs Scheme Help Us to Rank our Site in Top Position?<i class="fas fa-plus icon"></i></button>
+                <div class="content">
+                    <p> Yes, Frequently Asked Questions scheme will make your website more popular and increase your search engine ranking position.</p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <button class="toggle">Does FAQs Scheme Help Us to Rank our Site in Top Position?<i class="fas fa-plus icon"></i></button>
+                <div class="content">
+                    <p> Yes, Frequently Asked Questions scheme will make your website more popular and increase your search engine ranking position.</p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <button class="toggle">Does FAQs Scheme Help Us to Rank our Site in Top Position?<i class="fas fa-plus icon"></i></button>
+                <div class="content">
+                    <p> Yes, Frequently Asked Questions scheme will make your website more popular and increase your search engine ranking position.</p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <button class="toggle">Does FAQs Scheme Help Us to Rank our Site in Top Position?<i class="fas fa-plus icon"></i></button>
+                <div class="content">
+                    <p> Yes, Frequently Asked Questions scheme will make your website more popular and increase your search engine ranking position.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</section>
+{% endblock content %}
+
+
+{% block scripts %}
+<script>
+    let toggles = document.getElementsByClassName("toggle");
+        let contentDiv = document.getElementsByClassName("content");
+        let icons = document.getElementsByClassName("icon");
+
+        for (let i = 0; i < toggles.length; i++) {
+            toggles[i].addEventListener("click", () => {
+                if (parseInt(contentDiv[i].style.height) != contentDiv[i].scrollHeight) {
+                    contentDiv[i].style.height = contentDiv[i].scrollHeight + "px";
+                    toggles[i].style.color = "#0084e9";
+                    icons[i].classList.remove("fa-plus");
+                    icons[i].classList.add("fa-minus");
+                } else {
+                    contentDiv[i].style.height = "0px";
+                    toggles[i].style.color = "#111130";
+                    icons[i].classList.remove("fa-minus");
+                    icons[i].classList.add("fa-plus");
+                }
+
+                for (let j = 0; j < contentDiv.length; j++) {
+                    if (j !== i) {
+                        contentDiv[j].style.height = 0;
+                        toggles[j].style.color = "#111130";
+                        icons[j].classList.remove("fa-minus");
+                        icons[j].classList.add("fa-plus");
+                    }
+                }
+            });
+        }
+</script>
+{% endblock scripts %}
