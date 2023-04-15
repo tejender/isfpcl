@@ -96,6 +96,29 @@
         height: 300px;
       }
 
+
+
+/* about page */
+
+    .about-content{
+        background-position:40% 100%;
+    }
+    .about-content p{
+        width: 100%;
+    }
+    .team-content{
+        display: flex;
+        overflow-x: scroll;
+        justify-content: start;
+        width:100%;
+        gap: 20px;
+       
+    }
+    .team-member{
+        min-width: 100%;
+        background-color: rgb(30, 30, 32);
+    }
+
     /* footer-section */
 
     .footer-container{

@@ -29,7 +29,7 @@ img{
 
 .section-title h2{
     font-size: 2rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: #008929;
 }
 
@@ -327,6 +327,58 @@ section.body-section.contact{
   -o-transition: all 1s;
   transition: all 1s;
 }
+
+
+
+
+
+
+/* about page */
+section.about-hero{
+  height: 300px;
+}
+
+
+.about-content{
+  width: 100%;
+  background-image: url('/static/assets/images/apple-bg.png');
+  background-repeat: no-repeat;
+  background-position-x:100% ;
+  background-position-y:70%;
+}
+.about-content p{
+  width: 70%;
+  line-height: 30px;
+
+}
+.team-content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.team-member{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin: 20px 0;
+  height: 400px;
+ position: relative;
+ 
+}
+
+.team-member .mamber-info{
+  position: absolute;
+  background: white;
+  width: 90%;
+  padding: 10px 20px;
+  bottom: 0;
+  text-align: center;
+}
+
 
 
 /* footer section */
