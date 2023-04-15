@@ -40,7 +40,7 @@ img{
 }
 
 .btn-full{
-    width: 95%;
+    width: 100%;
     text-align: center;
 }
 .btn-mid{
@@ -80,9 +80,8 @@ img{
   }
 
   .about-left p{
-    line-height: 1.5rem;
-    /* font-family: 'Lato', sans-serif; */
-    font-size: 1.14rem;
+    font-size: 1.3rem;
+    color: #302f2f;
   }
 
   .about-right{
@@ -99,9 +98,14 @@ img{
     width: 80%;
     text-align: center;
   }
+  .section-intro p{
+    font-size: 1.4rem;
+    color: #615f5f;
+  }
   .service-container{
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
     gap: 8%;
   }
 
@@ -113,6 +117,9 @@ img{
     flex-direction: column;
     /* align-items: center; */
     row-gap: 20px;
+    border: 1px solid #B4E330;
+    padding: 20px;
+    box-shadow:  1px 1px 1px 1px #00892967,-1px -1px 1px 1px #00892967;
   }
 
   .service-info{
@@ -188,6 +195,7 @@ footer{
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-top: 20px;
 }
 
 .logo.logo-footer .logo--title h2{

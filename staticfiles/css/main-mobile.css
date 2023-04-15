@@ -21,14 +21,18 @@
     }
 
     .service-container{
-        row-gap: 20px;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 100%;
+
     }
     .service-container .service-item{
-        flex-direction: column;
-        width: 100%;
+        /* flex-direction: column; */
+        min-width: 100%;
     }
     .section-intro{
-        display: none;
+       width: 100%;
     }
 
     .section-title h2{
