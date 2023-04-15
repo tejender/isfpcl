@@ -127,7 +127,7 @@
       /* position: absolute; */
       color: white;
       
-      font-size: 3rem;
+      font-size: 2rem;
       color: rgb(23, 226, 23);
     }
 
@@ -138,8 +138,11 @@
       align-items: center;
       justify-content: space-evenly;
     }
-    .logo-icon{
-      display: none;
+    .logo--title h2{
+      font-size: 1.5rem;
+    }
+    .logo--slogan h2{
+      font-size: .7rem;
     }
   }
   

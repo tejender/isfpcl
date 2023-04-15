@@ -79,6 +79,9 @@
     .footer-section{
         width: 100%;
     }
+    .footer-section .brand-info{
+        width: 100%;
+    }      
 }
 
 
