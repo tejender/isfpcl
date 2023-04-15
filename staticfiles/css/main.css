@@ -173,3 +173,99 @@ section.rental-products{
     font-size: 1.5rem;
     font-family: sans-serif;
   }
+
+
+
+/* footer section */
+
+footer{
+  background-color: #232323;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.logo.logo-footer .logo--title h2{
+  color: #B4E330;
+  font-size: 1.4rem;
+}
+
+.logo.logo-footer .logo--slogan h2{
+  font-size: .69rem;
+}
+
+footer .footer-container{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.footer-section{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 10px;
+}
+
+.footer-section .brand-info{
+  width: 80%;
+  font-size: medium;
+  /* word-spacing: 5px; */
+  letter-spacing: 1px;
+  line-height: 1.4rem;
+}
+
+.footer-section .social-icons{
+  display: flex;
+  gap: 20px;
+}
+
+.footer-section .social-icons i{
+  
+  color: #B4E330;
+}
+
+
+.quick-links ul{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.quick-links ul li{
+  display: flex;
+  gap: 10px;
+  font-size: 1.1rem;
+  align-items: center;
+}
+
+.quick-links ul li i{
+  color: #B4E330;
+}
+
+.contact-info ul{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-info ul li{
+  display: flex;
+  gap: 10px;
+  font-size: 1.1rem;
+  align-items: center;
+}
+
+.contact-info ul li i{
+  color: #B4E330;
+}
+
+.footer-bottom{
+  color: #B4E330;
+  text-align: center;
+  border-top: 2px solid greenyellow;
+  padding-top: 20px;
+}
