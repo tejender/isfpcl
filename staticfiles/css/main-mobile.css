@@ -83,7 +83,12 @@
     }
 
     .contact .section-title h2{
-        width: 80%;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .faq .section-title h2{
+        font-size: 1.5rem;
     }
 
     .contact .map-location{

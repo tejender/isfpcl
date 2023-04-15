@@ -53,3 +53,10 @@ swiper-slide img {
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
 }
+
+
+@media screen and (max-width: 768px) {
+ swiper-container {  
+  height: 50vh;
+ }
+}
