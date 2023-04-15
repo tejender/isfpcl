@@ -1,6 +1,10 @@
 *{
     padding:0;
     margin:0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
   }
 
   
@@ -76,9 +80,9 @@ img{
   }
 
   .about-left p{
-    font-size: 1.1rem;
     line-height: 1.5rem;
-    word-spacing: 15px;
+    /* font-family: 'Lato', sans-serif; */
+    font-size: 1.14rem;
   }
 
   .about-right{
@@ -238,7 +242,7 @@ footer .footer-container{
 .quick-links ul li{
   display: flex;
   gap: 10px;
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   align-items: center;
 }
 
@@ -255,7 +259,7 @@ footer .footer-container{
 .contact-info ul li{
   display: flex;
   gap: 10px;
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   align-items: center;
 }
 
