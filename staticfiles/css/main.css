@@ -476,7 +476,7 @@ section.service-content .service-description p{
   font-size: 1.2rem;
 }
 
-.service-info ul li{
+.service-wrapper .service-info ul li{
   display: flex;
   justify-content: space-between;
 }
