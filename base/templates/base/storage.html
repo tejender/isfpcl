@@ -1,0 +1,55 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+    <section class="service-hero">
+        <img src="https://demo.bravisthemes.com/agria/wp-content/uploads/2022/12/service-single-01.jpg" alt="">
+    </section>
+
+    <section class="service-content body-section">    
+        <div class="service-description">
+            <p>
+                <span>W</span>e offers state-of-the-art cold storage units for fruit storage, 
+                including both large and medium-sized units. Our cold storage units 
+                provide a temperature-controlled environment that is essential for 
+                preserving the freshness and quality of your fruits. With flexible 
+                rental options and affordable rates, our cold storage units are the 
+                perfect solution for farmers and exporters looking to store their 
+                fruits in a safe and reliable manner. Whether you're looking to store a 
+                small quantity of fruits or a large harvest, our cold storage units are 
+                designed to meet your needs and ensure that your fruits are stored at the 
+                perfect temperature to maintain their freshness and quality.
+            </p>
+        </div>
+
+        <div class="service-wrapper">
+            {% for service_name,service in storage_service.items  %}
+            <div class="service-item">
+                <img src="{{service.img_url}}" alt="">
+                <div class="service-info">
+                    <h2>{{service.name}}</h2>
+                    <ul>
+                        {% for detail_name, service_detail in service.details.items %}
+                        <li><b>{{detail_name}}</b>  {{service_detail}}</li>
+                        {% endfor %}
+                        
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="service-features">
+            {% for feature_name,feature in service_features.items  %}
+            <div class="single-feature">
+                <h3 class="feature-title">
+                    {{ feature_name }}
+                </h3>
+                <p class="feature-description">
+                    {{ feature.description }}
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock content %}

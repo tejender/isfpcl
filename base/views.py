@@ -55,6 +55,56 @@ def Home(request):
     return render(request, 'base/home.html',context)
 
 
+
+def Storage(request):
+    storage_service ={
+        '1':{
+            'name':'Cold Storage Large',
+            'details':{
+                'capacity':'1000 Tons',
+                'pricing':'$1000',
+                'location':'Kathmandu',
+                'Temprature-control':'Yes',
+                'security':'Yes',
+                'accessibility':'24/7',
+
+            },
+            
+            'img_url':'https://apal.org.au/wp-content/uploads/2019/08/Apples-in-cold-storage-DSC_9302-web.jpg',
+            },
+            '2':{
+            'name':'Cold Storage Medium',
+            'details':{
+                'capacity':'1000 Tons',
+                'pricing':'$1000',
+                'location':'Kathmandu',
+                'Temprature-control':'Yes',
+                'security':'Yes',
+                'accessibility':'24/7',
+                
+            },
+            
+            'img_url':'https://5.imimg.com/data5/IQ/SV/IC/SELLER-485160/apple-degreening-cold-storage-room-1000x1000.JPG',
+            }
+        }
+    service_features={                                
+                'Temperature controlled storage':{
+                    'description':' Our cold storage units are equipped with state-of-the-art temperature control systems, ensuring that your fruits stay fresh and healthy for longer periods of time.',
+                },
+                'Versatile storage options':{
+                    'description':'We offer a range of storage options to meet your unique needs, from small-scale to large-scale storage. Our units can accommodate different types of fruits and are designed to keep them fresh and in optimal condition.',
+                },
+                'Flexible rental options':{
+                    'description':'We understand that your storage needs may vary over time, which is why we offer flexible rental options. You can rent our units on a short-term or long-term basis, depending on your needs.',
+                },
+                'Affordable rates':{
+                    'description':' Our rates are competitive and affordable, making our cold storage units accessible to a wide range of customers. We believe that everyone should have access to high-quality storage solutions, regardless of their budget.',
+                },
+            }
+    context={'storage_service':storage_service,'service_features':service_features}
+    
+    return render(request, 'base/storage.html',context)
+
 def Contact(request):
     return render(request, 'base/contact.html')
 

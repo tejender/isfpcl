@@ -433,6 +433,82 @@ section.about-hero{
 
 
 
+
+
+/* service page */
+
+section.service-content .service-description p{
+  font-size: 1.24rem;
+  line-height: 1.8rem;
+}
+
+.service-description p span{
+  font-size: 1.5rem;
+  color: #49e40b;
+ font-family: monospace
+}
+
+
+.service-content .service-wrapper{
+  display: flex;
+  gap: 4%;
+  width: 100%;
+}
+
+.service-content .service-wrapper .service-item{
+  width: 48%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  
+}
+
+.service-content .service-wrapper .service-item img{
+  height: 250px;
+  width: 100% ;
+  object-fit: cover;
+}
+
+.service-info ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+.service-info ul li{
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-info ul li b{
+  color:#5b770c
+}
+
+.service-features{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  
+}
+.single-feature{
+  width:24%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 5px;
+  /* background-color: #f3c407f5; */
+  border: 1px solid #49e40b;
+  padding: 10px;
+  border-radius: 10px;
+}
+.feature-description{
+line-height: 1.4rem;
+color: #2c2b2b;
+}
+
 /* footer section */
 
 footer{
