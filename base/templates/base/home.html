@@ -77,16 +77,16 @@ data-aos-duration="3000">
     </div>
 
     <div class="service-container">
+        {% for service_name,service in storage_service.items %}
         <div class="service-item">
                <div class="service-info">
                 <div class="service-title">
-                    <h3>cold store large size</h3>
+                    <h3>{{service.name}}</h3>
                 </div>
                 <ul class="service-points">
-                    <li><i class="fa-solid fa-circle-check"></i> Temperature-controlled storage:</li>
-                    <li><i class="fa-solid fa-circle-check"> </i>Versatile storage options:</li>
-                    <li><i class="fa-solid fa-circle-check"></i>Flexible rental options</li>
-                    <li> <i class="fa-solid fa-circle-check"></i>Affordable rates</li>
+                    {% for feature   in service.features  %}                 
+                    <li><i class="fa-solid fa-circle-check"></i> {{feature}}</li>
+                    {% endfor %}  
                 </ul>
                </div>
                <div class="servic-img">
@@ -96,7 +96,8 @@ data-aos-duration="3000">
                 Learn More
                </div>
         </div>
-        <div class="service-item">
+        {% endfor %}
+        {% comment %} <div class="service-item">
             <div class="service-info">
                 <div class="service-title">
                     <h3>cold store large size</h3>
@@ -114,10 +115,25 @@ data-aos-duration="3000">
             <div class="btn btn-full">
                 Learn More
                </div>
-        </div>
+        </div> {% endcomment %}
     </div>
 </section>
 
+
+<section class="body-section grading-machine">
+    
+    <div class="section-content">
+        <div class="section-info">
+            <p>
+                Effortlessly grade and sort your apples with our state-of-the-art apple grading machine.
+            </p>
+            <div class="btn">
+                Check Full Detail
+            </div>
+        </div>
+        <img src="https://res.cloudinary.com/dmj7e9a10/image/upload/c_scale,dpr_3.0,f_auto,q_auto/sorting-machines/apple-sorting/apple-sorting-machine-3.jpg" alt="">
+    </div>
+</section>
 
 
 <section class="rental-products body-section" data-aos="fade-up"
@@ -128,8 +144,7 @@ data-aos-duration="3000">
         </h2>
         
     </div>
-   <div class="section-intro">
-    <p>
+   <div class="section-intro">    <p>
         
 
             Our high-quality equipment rentals provide the tools you need
@@ -139,86 +154,30 @@ data-aos-duration="3000">
    </div>
 
     <div class="rental-item-container">
+
+
+        {% for item_name,rental_item in rental_service.items %}
         <div class="rental-item">
-            <img src="https://m.media-amazon.com/images/I/81WMYDCU30L._SL1500_.jpg" alt="">
+            <img src="{{rental_item.img_url}}" alt="">
 
             <div class="rental-item--info">
                 <h3 class="item-title">
-                    Power Sprayer
+                    {{rental_item.name}}
                 </h3>
             </div>
             <div class="btn btn-mid">
                 Learn More
             </div>
         </div>
+        {% endfor %}
 
 
-        <div class="rental-item">
-            <img src="https://www.vsttractors.com/sites/default/files/styles/product_listing/public/2021-12/95_listing.png?itok=ZsVTKF06" alt="">
-
-            <div class="rental-item--info">
-                <h3 class="item-title">
-                    Power Tiller
-                </h3>
-            </div>
-            <div class="btn btn-mid">
-                Learn More
-            </div>
-        </div>
-
-
-        <div class="rental-item">
-            <img src="https://5.imimg.com/data5/KZ/LT/UW/IOS-4151186/product-jpeg-500x500.png" alt="">
-
-            <div class="rental-item--info">
-                <h3 class="item-title">
-                    Power Chain Saw
-                </h3>
-            </div>
-            <div class="btn btn-mid">
-                Learn More
-            </div>
-        </div>
-        <div class="rental-item">
-            <img src="https://m.media-amazon.com/images/I/51gx2huRGZL._SL1107_.jpg" alt="">
-
-            <div class="rental-item--info">
-                <h3 class="item-title">
-                    Grass Cutter
-                </h3>
-            </div>
-            <div class="btn btn-mid">
-                Learn More
-            </div>
-        </div>
-
-        <div class="rental-item">
-            <img src="https://m.media-amazon.com/images/I/61PfySaqLzL._SL1500_.jpg" alt="">
-
-            <div class="rental-item--info">
-                <h3 class="item-title">
-                    Earth Auger
-                </h3>
-            </div>
-            <div class="btn btn-mid">
-                Learn More
-            </div>
-        </div>
-        <div class="rental-item">
-            <img src="https://m.media-amazon.com/images/I/81WMYDCU30L._SL1500_.jpg" alt="">
-
-            <div class="rental-item--info">
-                <h3 class="item-title">
-                    Power Sprayer
-                </h3>
-            </div>
-            <div class="btn btn-mid">
-                Learn More
-            </div>
-        </div>
+        
     </div>
 </section>
-</div>
+
+
+
 
 {% endblock content %}
 

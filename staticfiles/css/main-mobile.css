@@ -72,6 +72,10 @@
     }
 
 
+    .grading-machine .section-content .section-info p{
+        font-size: 1.2rem;
+    }
+
 
     /* contact page  */
     section.body-section.contact{
