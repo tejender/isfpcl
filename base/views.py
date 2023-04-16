@@ -61,12 +61,31 @@ def Storage(request):
         '1':{
             'name':'Cold Storage Large',
             'details':{
-                'capacity':'1000 Tons',
-                'pricing':'$1000',
-                'location':'Kathmandu',
-                'Temprature-control':'Yes',
-                'security':'Yes',
-                'accessibility':'24/7',
+                
+                'capacity':{
+                    'icon':'<i class="fa-solid fa-warehouse"></i>',
+                    'value':'1000 Tons',
+                },
+                'pricing':{
+                    'icon':'<i class="fa-solid fa-indian-rupee-sign"></i>',
+                    'value':'1000'
+                    },
+                'location':{
+                    'icon':'<i class="fa-solid fa-location-dot"></i>',
+                    'value':'Kathmandu'
+                },
+                'temprature':{
+                    'icon':'<i class="fa-solid fa-temperature-three-quarters"></i>',
+                    'value':'Temprature Controlled'
+                },
+                'security':{
+                    'icon':'<i class="fa-solid fa-lock"></i>',
+                    'value':'security'
+                },
+                'accessibility':{
+                    'icon':'<i class="fa-solid fa-eye"></i>',
+                    'value':'24/7 accessibility'
+                },  
 
             },
             
@@ -75,13 +94,31 @@ def Storage(request):
             '2':{
             'name':'Cold Storage Medium',
             'details':{
-                'capacity':'1000 Tons',
-                'pricing':'$1000',
-                'location':'Kathmandu',
-                'Temprature-control':'Yes',
-                'security':'Yes',
-                'accessibility':'24/7',
-                
+               'capacity':{
+                    'icon':'<i class="fa-solid fa-warehouse"></i>',
+                    'value':'1000 Tons',
+                },
+                'pricing':{
+                    'icon':'<i class="fa-solid fa-indian-rupee-sign"></i>',
+                    'value':'1000'
+                    },
+                'location':{
+                    'icon':'<i class="fa-solid fa-location-dot"></i>',
+                    'value':'Kathmandu'
+                },
+                'temprature':{
+                    'icon':'<i class="fa-solid fa-temperature-three-quarters"></i>',
+                    'value':'Temprature Controlled'
+                },
+                'security':{
+                    'icon':'<i class="fa-solid fa-lock"></i>',
+                    'value':'security'
+                },
+                'accessibility':{
+                    'icon':'<i class="fa-solid fa-eye"></i>',
+                    'value':'24/7 accessibility'
+                },  
+ 
             },
             
             'img_url':'https://5.imimg.com/data5/IQ/SV/IC/SELLER-485160/apple-degreening-cold-storage-room-1000x1000.JPG',

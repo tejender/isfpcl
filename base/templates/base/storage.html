@@ -29,8 +29,8 @@
                 <div class="service-info">
                     <h2>{{service.name}}</h2>
                     <ul>
-                        {% for detail_name, service_detail in service.details.items %}
-                        <li><b>{{detail_name}}</b>  {{service_detail}}</li>
+                        {% for detail_name, detail in service.details.items %}
+                            <li>{{detail.icon | safe}}  {{ detail.value }}</li>
                         {% endfor %}
                         
                     </ul>

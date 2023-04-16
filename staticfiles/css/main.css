@@ -478,7 +478,14 @@ section.service-content .service-description p{
 
 .service-wrapper .service-info ul li{
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  /* gap: 30px; */
+}
+
+.service-wrapper .service-info ul li i{
+ 
+  min-width: 40px;
+  color: #097c2c;
 }
 
 .service-info ul li b{
@@ -491,10 +498,11 @@ section.service-content .service-description p{
   justify-content: space-between;
   width: 100%;
   margin-top: 20px;
+  row-gap: 15px;
   
 }
 .single-feature{
-  width:24%;
+  width:49%;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
