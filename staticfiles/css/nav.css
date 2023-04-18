@@ -73,6 +73,11 @@
   li a:hover {
     background-color: blue;
   }
+
+  li.active a  {
+    background-color: blue ;
+  }
+ 
   .menu-btn {
     display: none;
   }

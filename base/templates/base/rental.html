@@ -1,0 +1,35 @@
+{% extends 'main.html' %}
+{% block content %}
+    <section class="rental-hero">
+        <img src="https://s3-us-west-1.amazonaws.com/contentlab.studiod/getty/9081a4aa7b61409fb8f375e03b27b3a9.jpg" alt="">
+    </section>
+
+    <section class="service-content body-section">
+        <div class="service-description">
+            <p>
+                <span>W</span>e believe that high-quality equipment is essential for achieving success in farming and gardening. That's why we provide a range of equipment for rent, including power sprayers, grass cutters, and more.
+
+Our goal is to make it easy and affordable for farmers and gardeners to access the equipment they need to achieve their goals. We pride ourselves on providing reliable, well-maintained equipment that is easy to use and operate.
+            </p>
+            <p>
+                We understand that every farm and garden is unique, which is why we offer a variety of equipment sizes and models to suit different needs. Our knowledgeable staff is always available to answer any questions you may have and to help you select the right equipment for your specific needs.
+            </p>
+        </div>
+        <div class="service-wrapper">
+            {% for service_name,service in rental_service.items  %}
+            <div class="service-item">
+                <img src="{{service.img_url}}" alt="">
+                <div class="service-info">
+                    <h2>{{service.name}}</h2>
+                    <ul>
+                        {% for detail_name, detail in service.details.items %}
+                            <li>{{detail.icon | safe}}  {{ detail.value }}</li>
+                        {% endfor %}
+                        
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock content %}

@@ -6,4 +6,5 @@ urlpatterns = [
     path('contact-us/', views.Contact, name='contact'),
     path('about-us/', views.About, name='about'),
     path('storage-service/', views.Storage, name='storage'),
+    path('rental-service/', views.Rental, name='rental'),
 ]

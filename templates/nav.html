@@ -21,13 +21,15 @@
             </div>
         </div>
         <ul class="main-menu">
-          <li class="list-items"><a href="{% url 'home' %}">Home</a></li>
-          <li class="list-items"><a href="{% url 'storage' %}">Storage Service</a></li>
-          <li class="list-items"><a href="{% url 'home' %}">Rental Service</a></li>
-          <li class="list-items"><a href="{% url 'home' %}">Grading Machine</a></li>
-          <li class="list-items"><a href="{% url 'about' %}">About</a></li>   
+          <li class="list-items {% if active_page == 'home' %} active {% endif %}"><a href="{% url 'home' %}">Home</a></li>
+          <li class="list-items {% if active_page == 'storage' %} active {% endif %}"><a href="{% url 'storage' %}">Storage Service</a></li>
+          <li class="list-items {% if active_page == 'rental' %} active {% endif %}">
+            <a href="{% url 'rental' %}">Rental Service</a>
+          </li>
+          <li class="list-items {% if active_page == 'grading' %} active {% endif %}"><a href="{% url 'home' %}">Grading Machine</a></li>
+          <li class="list-items {% if active_page == 'about' %} active {% endif %}"><a href="{% url 'about' %}">About</a></li>   
 
-          <li class="list-items"><a href="{% url 'contact' %}">Contact</a></li>
+          <li class="list-items {% if active_page == 'contact' %} active {% endif %}"><a href="{% url 'contact' %}">Contact</a></li>
         </ul>
       </nav>
     </div>

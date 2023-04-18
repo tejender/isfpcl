@@ -1,5 +1,9 @@
 @media screen and (max-width: 768px) {
 
+    .only-desktop{
+        display: none;
+    }
+
     .section-container{
         gap: 0px;
     }
@@ -16,8 +20,8 @@
         width: 95%;
         text-align: center;
     }
-    .about-right{
-        display: none;
+    .single-activity{
+        width: 100%;
     }
 
     .service-container{

@@ -80,7 +80,7 @@ img{
   }
 
   .about-left{
-    width: 48.5%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -89,16 +89,27 @@ img{
   .about-left p{
     
     color: #302f2f;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
 
-  .about-right{
-    width: 48.5%;
-    height: 280px;
-  }
+ .activities-wrapper{
+  width: 100%;
+  display:  flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+ }
 
-  .about-right img{
-    border-radius: 10px;
-  }
+ .single-activity{
+  width: 49%;
+  border: 1px solid #097c2c;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ }
 
 
   .section-intro{
@@ -515,6 +526,10 @@ section.service-content .service-description p{
 .feature-description{
 line-height: 1.4rem;
 color: #2c2b2b;
+}
+
+.rental-hero{
+  height:300px;
 }
 
 /* footer section */

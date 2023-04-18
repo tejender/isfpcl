@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def Home(request):
+    active_page = 'home'
     storage_service ={
         '1':{
             'name':'Cold Storage Large',
@@ -44,19 +45,20 @@ def Home(request):
             'img_url':'https://m.media-amazon.com/images/I/51gx2huRGZL._SL1107_.jpg',
         },
         '5':{
-            'name':'Power Sprayer',
+            'name':'Earth Auger',
             'img_url':'https://m.media-amazon.com/images/I/61PfySaqLzL._SL1500_.jpg',
         },
         
     }
     
-    context = {'storage_service':storage_service,'rental_service':rental_service}
+    context = {'storage_service':storage_service,'rental_service':rental_service,'active_page':active_page}
     
     return render(request, 'base/home.html',context)
 
 
 
 def Storage(request):
+    active_page='storage'
     storage_service ={
         '1':{
             'name':'Cold Storage Large',
@@ -138,12 +140,130 @@ def Storage(request):
                     'description':' Our rates are competitive and affordable, making our cold storage units accessible to a wide range of customers. We believe that everyone should have access to high-quality storage solutions, regardless of their budget.',
                 },
             }
-    context={'storage_service':storage_service,'service_features':service_features}
+    context={'storage_service':storage_service,'service_features':service_features,'active_page':active_page}
     
     return render(request, 'base/storage.html',context)
 
+
+def Rental(request):
+    rental_service ={
+        '1':{
+            'name':'Power Sprayer',
+            'details':{
+                
+                'units':{
+                    'icon':'<i class="fa-solid fa-warehouse"></i>',
+                    'value':'1000 Tons',
+                },
+                'pricing':{
+                    'icon':'<i class="fa-solid fa-indian-rupee-sign"></i>',
+                    'value':'1000'
+                    },
+                'rental-period':{
+                    'icon':'<i class="fa-solid fa-location-dot"></i>',
+                    'value':'Kathmandu'
+                },
+                
+            },
+            
+            'img_url':'https://apal.org.au/wp-content/uploads/2019/08/Apples-in-cold-storage-DSC_9302-web.jpg',
+            },
+            '2':{
+            'name':'Power Sprayer',
+            'details':{
+                
+                'units':{
+                    'icon':'<i class="fa-solid fa-warehouse"></i>',
+                    'value':'1000 Tons',
+                },
+                'pricing':{
+                    'icon':'<i class="fa-solid fa-indian-rupee-sign"></i>',
+                    'value':'1000'
+                    },
+                'rental-period':{
+                    'icon':'<i class="fa-solid fa-location-dot"></i>',
+                    'value':'Kathmandu'
+                },
+                
+            },
+            
+            'img_url':'https://apal.org.au/wp-content/uploads/2019/08/Apples-in-cold-storage-DSC_9302-web.jpg',
+            },
+            '3':{
+            'name':'Power Sprayer',
+            'details':{
+                
+                'units':{
+                    'icon':'<i class="fa-solid fa-warehouse"></i>',
+                    'value':'1000 Tons',
+                },
+                'pricing':{
+                    'icon':'<i class="fa-solid fa-indian-rupee-sign"></i>',
+                    'value':'1000'
+                    },
+                'rental-period':{
+                    'icon':'<i class="fa-solid fa-location-dot"></i>',
+                    'value':'Kathmandu'
+                },
+                
+            },
+            
+            'img_url':'https://apal.org.au/wp-content/uploads/2019/08/Apples-in-cold-storage-DSC_9302-web.jpg',
+            },
+            '4':{
+            'name':'Power Sprayer',
+            'details':{
+                
+                'units':{
+                    'icon':'<i class="fa-solid fa-warehouse"></i>',
+                    'value':'1000 Tons',
+                },
+                'pricing':{
+                    'icon':'<i class="fa-solid fa-indian-rupee-sign"></i>',
+                    'value':'1000'
+                    },
+                'rental-period':{
+                    'icon':'<i class="fa-solid fa-location-dot"></i>',
+                    'value':'Kathmandu'
+                },
+                
+            },
+            
+            'img_url':'https://apal.org.au/wp-content/uploads/2019/08/Apples-in-cold-storage-DSC_9302-web.jpg',
+            },
+            '5':{
+            'name':'Power Sprayer',
+            'details':{
+                
+                'units':{
+                    'icon':'<i class="fa-solid fa-warehouse"></i>',
+                    'value':'1000 Tons',
+                },
+                'pricing':{
+                    'icon':'<i class="fa-solid fa-indian-rupee-sign"></i>',
+                    'value':'1000'
+                    },
+                'rental-period':{
+                    'icon':'<i class="fa-solid fa-location-dot"></i>',
+                    'value':'Kathmandu'
+                },
+                
+            },
+            
+            'img_url':'https://apal.org.au/wp-content/uploads/2019/08/Apples-in-cold-storage-DSC_9302-web.jpg',
+            },
+    }
+    active_page='rental'
+    context={'active_page':active_page,'rental_service':rental_service}
+    return render(request, 'base/rental.html',context)
+
 def Contact(request):
-    return render(request, 'base/contact.html')
+
+    active_page='contact'
+    context={'active_page':active_page}
+    return render(request, 'base/contact.html',context)
 
 def About(request):
-    return render(request, 'base/about.html')
+    active_page='about'
+    context={'active_page':active_page}
+    return render(request, 'base/about.html',context)
