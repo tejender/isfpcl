@@ -4,7 +4,7 @@
         <i class="fa-solid fa-bars"></i>
       </div>
       <nav class="navbar">
-        <div class="logo">
+        <a class="logo" href="{% url 'home' %}">
             
             <div class="logo-text">
 
@@ -19,7 +19,7 @@
                     </h2>
                 </div>
             </div>
-        </div>
+        </a>
         <ul class="main-menu">
           <li class="list-items {% if active_page == 'home' %} active {% endif %}"><a href="{% url 'home' %}">Home</a></li>
           <li class="list-items {% if active_page == 'storage' %} active {% endif %}"><a href="{% url 'storage' %}">Storage Service</a></li>

@@ -72,10 +72,12 @@
   }
   li a:hover {
     background-color: blue;
+    border-radius: 5px;
   }
 
   li.active a  {
     background-color: blue ;
+    border-radius: 5px;
   }
  
   .menu-btn {
