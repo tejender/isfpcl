@@ -27,6 +27,11 @@ img{
     object-fit: cover;
 }
 
+.centered{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .section-title h2{
     font-size: 2rem;
     text-transform: capitalize;
@@ -424,8 +429,8 @@ section.body-section.contact{
 
 
 /* about page */
-section.about-hero{
-  height: 300px;
+section.about-hero,.contact-hero{
+  height: 350px;
 }
 
 

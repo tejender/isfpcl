@@ -16,10 +16,7 @@
         width: 100%;
        
     }
-    .about-left .btn{
-        width: 95%;
-        text-align: center;
-    }
+    
     .single-activity{
         width: 100%;
     }
@@ -48,10 +45,10 @@
     }
 
     .rental-item-container{
-        overflow-x: scroll;
+        
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: start;
+        flex-direction: column;
+        
         width: 100%;
   
         
