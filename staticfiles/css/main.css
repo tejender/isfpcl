@@ -114,6 +114,11 @@ img{
   gap: 10px;
  }
 
+ .activity-img{
+  height: 200px;
+ }
+
+
  .activity-info{
   display: flex;
   flex-direction: column;
@@ -121,6 +126,9 @@ img{
   min-height: 110px;
  }
 
+ .activity-info p{
+  min-height: 100px;
+ }
  .btn-activity{
   margin: 0 auto;
  }
@@ -210,9 +218,15 @@ section.rental-products{
     padding-bottom: 20px;
   }
 
-  .rental-item img{
+  .rental-item img {
     width: 200px;
     height: 150px;
+  }
+
+  .rental-item:last-child img{
+    transform: rotateZ(50deg);
+    width: 160px;
+   
   }
   .rental-item .item-title{
     font-size: 1.5rem;
@@ -425,12 +439,23 @@ section.about-hero{
 .about-content p{
   width: 70%;
   line-height: 30px;
+  font-size: 1.1rem;
 
+}
+.about-content h3{
+  margin-top: 20px;
+}
+.about-content ul{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .team-content{
   width: 100%;
   display: flex;
   justify-content: space-between;
+  height: 500px;
 
 }
 
@@ -541,8 +566,41 @@ line-height: 1.4rem;
 color: #2c2b2b;
 }
 
-.rental-hero{
+.rental-hero,.store-hero{
   height:300px;
+}
+
+.service-wrapper.rental{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.rental .service-item img.rental-img {
+  height: 150px;
+  width: auto;
+  object-fit: cover;
+}
+
+.rental .img-info-wrapper{
+  display: flex;
+}
+
+
+
+.img-container-store{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+
+}
+.store-img{
+  width: 32%;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /* footer section */

@@ -161,6 +161,18 @@
         }
 
 
+        .img-container-store{
+            display: flex;
+           flex-direction: column;
+           row-gap: 20px;
+          
+          }
+          .store-img {
+            width: 100%;          
+           
+          
+          }
+
     /* footer-section */
 
     .footer-container{

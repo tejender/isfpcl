@@ -61,20 +61,17 @@ def Storage(request):
     active_page='storage'
     storage_service ={
         '1':{
-            'name':'Cold Storage Large',
+            'name':'Cold Storage - I ',
             'details':{
                 
                 'capacity':{
                     'icon':'<i class="fa-solid fa-warehouse"></i>',
-                    'value':'1000 Tons',
+                    'value':'15 Metric Tons',
                 },
-                'pricing':{
-                    'icon':'<i class="fa-solid fa-indian-rupee-sign"></i>',
-                    'value':'1000'
-                    },
+                
                 'location':{
                     'icon':'<i class="fa-solid fa-location-dot"></i>',
-                    'value':'Kathmandu'
+                    'value':'Palhi, Banjar'
                 },
                 'temprature':{
                     'icon':'<i class="fa-solid fa-temperature-three-quarters"></i>',
@@ -94,19 +91,16 @@ def Storage(request):
             'img_url':'https://apal.org.au/wp-content/uploads/2019/08/Apples-in-cold-storage-DSC_9302-web.jpg',
             },
             '2':{
-            'name':'Cold Storage Medium',
+            'name':'Cold Storage - II ',
             'details':{
                'capacity':{
                     'icon':'<i class="fa-solid fa-warehouse"></i>',
-                    'value':'1000 Tons',
+                    'value':'7 Metric Tons',
                 },
-                'pricing':{
-                    'icon':'<i class="fa-solid fa-indian-rupee-sign"></i>',
-                    'value':'1000'
-                    },
+                
                 'location':{
                     'icon':'<i class="fa-solid fa-location-dot"></i>',
-                    'value':'Kathmandu'
+                    'value':'Shensar , Banjar'
                 },
                 'temprature':{
                     'icon':'<i class="fa-solid fa-temperature-three-quarters"></i>',
@@ -151,111 +145,63 @@ def Rental(request):
             'name':'Power Sprayer',
             'details':{
                 
-                'units':{
-                    'icon':'<i class="fa-solid fa-warehouse"></i>',
-                    'value':'1000 Tons',
-                },
-                'pricing':{
-                    'icon':'<i class="fa-solid fa-indian-rupee-sign"></i>',
-                    'value':'1000'
-                    },
-                'rental-period':{
-                    'icon':'<i class="fa-solid fa-location-dot"></i>',
-                    'value':'Kathmandu'
-                },
+               
                 
             },
             
-            'img_url':'https://apal.org.au/wp-content/uploads/2019/08/Apples-in-cold-storage-DSC_9302-web.jpg',
+            'img_url':'assets/images/equipments/power-sprayer.png',
             },
             '2':{
-            'name':'Power Sprayer',
+            'name':'Power Tiller',
             'details':{
                 
-                'units':{
-                    'icon':'<i class="fa-solid fa-warehouse"></i>',
-                    'value':'1000 Tons',
-                },
-                'pricing':{
-                    'icon':'<i class="fa-solid fa-indian-rupee-sign"></i>',
-                    'value':'1000'
-                    },
-                'rental-period':{
-                    'icon':'<i class="fa-solid fa-location-dot"></i>',
-                    'value':'Kathmandu'
-                },
+                
                 
             },
             
-            'img_url':'https://apal.org.au/wp-content/uploads/2019/08/Apples-in-cold-storage-DSC_9302-web.jpg',
+            'img_url':'assets/images/equipments/power-tiller.png',
             },
             '3':{
-            'name':'Power Sprayer',
+            'name':'Power Chain Saw',
             'details':{
                 
-                'units':{
-                    'icon':'<i class="fa-solid fa-warehouse"></i>',
-                    'value':'1000 Tons',
-                },
-                'pricing':{
-                    'icon':'<i class="fa-solid fa-indian-rupee-sign"></i>',
-                    'value':'1000'
-                    },
-                'rental-period':{
-                    'icon':'<i class="fa-solid fa-location-dot"></i>',
-                    'value':'Kathmandu'
-                },
+               
                 
             },
             
-            'img_url':'https://apal.org.au/wp-content/uploads/2019/08/Apples-in-cold-storage-DSC_9302-web.jpg',
+            'img_url':'assets/images/equipments/chain-saw.png',
             },
             '4':{
-            'name':'Power Sprayer',
+            'name':'Grass Cutter',
             'details':{
                 
-                'units':{
-                    'icon':'<i class="fa-solid fa-warehouse"></i>',
-                    'value':'1000 Tons',
-                },
-                'pricing':{
-                    'icon':'<i class="fa-solid fa-indian-rupee-sign"></i>',
-                    'value':'1000'
-                    },
-                'rental-period':{
-                    'icon':'<i class="fa-solid fa-location-dot"></i>',
-                    'value':'Kathmandu'
-                },
+               
                 
             },
             
-            'img_url':'https://apal.org.au/wp-content/uploads/2019/08/Apples-in-cold-storage-DSC_9302-web.jpg',
+            'img_url':'assets/images/equipments/grass-cutter.png',
             },
             '5':{
-            'name':'Power Sprayer',
+            'name':'Earth Auger',
             'details':{
                 
-                'units':{
-                    'icon':'<i class="fa-solid fa-warehouse"></i>',
-                    'value':'1000 Tons',
-                },
-                'pricing':{
-                    'icon':'<i class="fa-solid fa-indian-rupee-sign"></i>',
-                    'value':'1000'
-                    },
-                'rental-period':{
-                    'icon':'<i class="fa-solid fa-location-dot"></i>',
-                    'value':'Kathmandu'
-                },
+               
                 
             },
             
-            'img_url':'https://apal.org.au/wp-content/uploads/2019/08/Apples-in-cold-storage-DSC_9302-web.jpg',
+            'img_url':'assets/images/equipments/earth-auger.png',
             },
     }
     active_page='rental'
     context={'active_page':active_page,'rental_service':rental_service}
     return render(request, 'base/rental.html',context)
+
+
+
+def AgroStore(request):
+    active_page='store'
+    context={'active_page':active_page}
+    return render(request, 'base/store.html',context)
 
 def Contact(request):
 

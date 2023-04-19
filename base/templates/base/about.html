@@ -1,4 +1,5 @@
 {% extends 'main.html' %}
+{% load static %}
 {% block content %}
 <section class="about-hero">
     <img src="https://cdn.pixabay.com/photo/2016/11/30/15/23/apples-1873078_960_720.jpg" alt="">
@@ -13,23 +14,34 @@
     </div>
         <div class="about-content">
             <p>
-                is simply dummy text of the printing and typesetting industry.
-                 Lorem Ipsum has been the industry's standard dummy text ever since 
-                 the 1500s, when an unknown printer took a galley of type and scrambled it 
-                 to make a type specimen book. It has survived not only five centuries,
-                  but also the leap into electronic typesetting, remaining essentially u
-                  nchanged. It was popularised in the 1960s with the release of Letraset 
-                  sheets containing Lorem Ipsum passages, and more recently with desktop 
-                  publishing software
-                 like Aldus PageMaker including versions of Lorem Ipsum.
-                 eadable content of a page when looking at its layout. The 
-                 point of using Lorem Ipsum is that it has a more-or-less normal
-                  distribution of letters, as opposed to using 'Content here, content
-                   here', making it look like readable English. Many desktop publishing 
-                   packages and web page editors now use Lorem Ipsum as their default 
-                   model text,
-                  and a search for 'lore
+                The Farmer Producer Company has a set of primary objectives aimed at 
+                enhancing the welfare and interests of its members. These objectives include a 
+                range of activities such as harvesting, procurement, pooling, production, 
+                selling, grading, handling, marketing, and exporting primary produce. 
+                Additionally, the company provides technical services, training, education, 
+                consultancy, research and development to its members. Another important 
+                objective is the revitalization of land and water resources, the generation, 
+                transmission, and distribution of power, as well as communications and 
+                conservation efforts related to primary produce.
             </p>
+                <p >
+                 The company also offers
+                 machinery, equipment, and consumables to its members. Moreover, it promotes
+                  mutual assistance, financial services, insurance of producers, and welfare
+                   measures for primary produce. In summary, the Farmer Producer Company aims
+                    to provide a comprehensive range of services that support the production
+                     and marketing of primary produce for the benefit of its members.
+            </p>
+            <h3>Key Details</h3>
+            <ul>
+                <li> <b>Date of Incorporation : </b> 19 February 2021 </li>
+                <li> <b>Farmer Mambers : </b> 316 </li>
+                <li>  <b>Villages Covered :</b> 14</li>
+                <li><b>Interest Groups :</b> 16</li>
+                <li><b> Local Market :</b> Fruit and Vagitable mandi, Banjar</li> 
+                <li><b>Main Market :</b> Fruit and vagitable market , Takoli</li>
+               
+            </ul>
         </div>
     
 </section>
@@ -40,31 +52,9 @@
             Our Team
         </h2>
     </div>
-        <div class="team-content">
-            <div class="team-member">
-                <img src="https://f8g8b9p5.rocketcdn.me/themes/agro/wp-content/uploads/2019/02/4-4.jpg" alt="">
-                <div class="mamber-info">
-                    <h3>John Doe</h3>
-                    <p>CEO</p>
-                </div>
-            </div>
+        <div class="team-content">            
 
-            <div class="team-member">
-                <img src="https://f8g8b9p5.rocketcdn.me/themes/agro/wp-content/uploads/2019/02/2-4.jpg" alt="">
-                <div class="mamber-info">
-                    <h3>John Doe</h3>
-                    <p>CEO</p>
-                </div>
-            </div>
-
-            <div class="team-member">
-                <img src="https://f8g8b9p5.rocketcdn.me/themes/agro/wp-content/uploads/2019/02/3-4.jpg" alt="">
-                <div class="mamber-info">
-                    <h3>John Doe</h3>
-                    <p>CEO</p>
-                </div>
-            </div>
-            
+            <img src="{% static 'assets/images/team-1.jpeg' %}" alt="">
     </div>
 </section>
 {% endblock content %}

@@ -10,16 +10,19 @@
     <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" 
     centered-slides="true" autoplay-delay="7000" autoplay-disable-on-interaction="false">
     <swiper-slide>
-        <img src="https://cdn.pixabay.com/photo/2023/03/31/14/39/ocean-7890172_960_720.jpg" alt="">
+        <img src="{% static 'assets/images/team.jpeg' %}" alt="">
     </swiper-slide>
     <swiper-slide>
-        <img src="https://cdn.pixabay.com/photo/2023/04/02/03/24/lakeshore-7893531_960_720.jpg" alt="">
+        <img  style="object-position:top;" src="{% static 'assets/images/fruit-packing.jpeg' %}" alt="">
     </swiper-slide>
     <swiper-slide>
-        <img src="https://cdn.pixabay.com/photo/2023/04/10/10/19/mountain-7913365_960_720.jpg" alt="">
+        <img src="{% static 'assets/images/agro-store.jpeg' %}" alt="">    
     </swiper-slide>
     <swiper-slide>
-        <img src="https://cdn.pixabay.com/photo/2023/04/04/05/17/vietnam-7898501_960_720.jpg" alt="">
+        <img src="{% static 'assets/images/equipments.jpg' %}" alt="">    
+    </swiper-slide>
+    <swiper-slide>
+        <img src="{% static 'assets/images/fruit-baskets.jpeg' %}" alt="">    
     </swiper-slide>
     <div class="autoplay-progress" slot="container-end">
         <svg viewBox="0 0 48 48">
@@ -81,6 +84,9 @@ data-aos-duration="3000">
 
         <div class="activities-wrapper">
             <div class="single-activity">
+                <div class="activity-img">
+                    <img src="{% static 'assets/images/cold-store.jpeg' %}" alt="">
+                </div>
                 <div class="activity-info">
                
                 <h3 class="activity-title">
@@ -93,34 +99,41 @@ data-aos-duration="3000">
                     and reduction in wastage particularly during  harvest period. 
 
                 </p>
-            </div>
-                <div class="btn btn-activity">
+                <a class="btn btn-activity" href="{% url 'storage' %}">
                     More Detail
-                </div>
+                </a>
+            </div>
             </div>
             <div class="single-activity">
-                <div class="activity-info">
-
-               
+                <div class="activity-img">
+                    <img src="{% static 'assets/images/equipments.jpg' %}" alt="">
+                </div>
+                 <div class="activity-info">               
                 <h3 class="activity-title">
                     Agricultural Equipments on Rental Basis
                 </h3>
+                
                 <p>
                     The FPC plans to provide agriculture equipments on rental basis to its farmer members
                     at affordable rates. These equipment includes  Power Tiller, Power Sprayer , Grass Cutter
                     Power Chain Saw and Earth Auger etc.
 
                 </p>
-            </div>
-                <div class="btn btn-activity">
+                <a class="btn btn-activity" href="{% url 'rental' %}">
                     Check Equipments
-                </div>
+                </a>
+            </div>
+               
 
             </div>
             <div class="single-activity">
+                <div class="activity-img">
+                    <img src="{% static 'assets/images/supply.jpeg' %}" alt="">
+                </div>
                 <h3 class="activity-title">
                     facilitation of input suplly
                 </h3>
+                
                 <p>
                     The FPC plans to facilitate input supply to its farmer members through a common interesr group
                     By consolidating demand and precuring input in bulk , the fpc can save on transportation
@@ -129,6 +142,9 @@ data-aos-duration="3000">
                 </p>
             </div>
             <div class="single-activity">
+                <div class="activity-img">
+                    <img src="{% static 'assets/images/perisimmon.jpeg' %}" alt="">
+                </div>
                 <h3 class="activity-title">
                     Facilitting Collective Marketing
                 </h3>
@@ -142,62 +158,6 @@ data-aos-duration="3000">
         </div>
     </section>
 
-<section class="service body-section" data-aos="fade-up"
-data-aos-duration="3000">
-    <div class="section-title">
-        <h2>storage service</h2>
-    </div>
-
-    <div class="section-intro">
-        <p>
-            “  Keep your agricultural products fresh and in optimal
-             condition with our temperature-controlled cold storage facilities.”
-            
-        </p>
-    </div>
-
-    <div class="service-container">
-        {% for service_name,service in storage_service.items %}
-        <div class="service-item">
-               <div class="service-info">
-                <div class="service-title">
-                    <h3>{{service.name}}</h3>
-                </div>
-                <ul class="service-points">
-                    {% for feature   in service.features  %}                 
-                    <li><i class="fa-solid fa-circle-check"></i> {{feature}}</li>
-                    {% endfor %}  
-                </ul>
-               </div>
-               <div class="servic-img">
-                <img src="{{service.img_url}}" alt="">
-               </div>
-               <div class="btn btn-full">
-                Learn More
-               </div>
-        </div>
-        {% endfor %}
-        {% comment %} <div class="service-item">
-            <div class="service-info">
-                <div class="service-title">
-                    <h3>cold store large size</h3>
-                </div>
-                <ul class="service-points">
-                    <li><i class="fa-solid fa-circle-check"></i> Temperature-controlled storage:</li>
-                    <li><i class="fa-solid fa-circle-check"> </i>Versatile storage options:</li>
-                    <li><i class="fa-solid fa-circle-check"></i>Flexible rental options</li>
-                    <li> <i class="fa-solid fa-circle-check"></i>Affordable rates</li>
-                </ul>
-               </div>
-            <div class="service-img">
-            <img src="https://5.imimg.com/data5/IQ/SV/IC/SELLER-485160/apple-degreening-cold-storage-room-1000x1000.JPG" alt=""> 
-            </div>
-            <div class="btn btn-full">
-                Learn More
-               </div>
-        </div> {% endcomment %}
-    </div>
-</section>
 
 
 <section class="body-section grading-machine">
@@ -205,56 +165,17 @@ data-aos-duration="3000">
     <div class="section-content">
         <div class="section-info">
             <p>
-                Effortlessly grade and sort your apples with our state-of-the-art apple grading machine.
+                Quality products at unbeatable prices – only at our agro store    
             </p>
             <div class="btn">
-                Check Full Detail
+                Know more
             </div>
         </div>
-        <img src="https://res.cloudinary.com/dmj7e9a10/image/upload/c_scale,dpr_3.0,f_auto,q_auto/sorting-machines/apple-sorting/apple-sorting-machine-3.jpg" alt="">
+        <img src="{% static 'assets/images/agro-store.jpeg' %}" alt="">
     </div>
 </section>
 
 
-<section class="rental-products body-section" data-aos="fade-up"
-data-aos-duration="3000">
-    <div class="section-title">
-        <h2>
-            Rental Service
-        </h2>
-        
-    </div>
-   <div class="section-intro">    <p>
-        
-
-            Our high-quality equipment rentals provide the tools you need
-             for your farm needs, including power sprayers, grass cutters, and more
-        
-    </p>
-   </div>
-
-    <div class="rental-item-container">
-
-
-        {% for item_name,rental_item in rental_service.items %}
-        <div class="rental-item">
-            <img src="{{rental_item.img_url}}" alt="">
-
-            <div class="rental-item--info">
-                <h3 class="item-title">
-                    {{rental_item.name}}
-                </h3>
-            </div>
-            <div class="btn btn-mid">
-                Learn More
-            </div>
-        </div>
-        {% endfor %}
-
-
-        
-    </div>
-</section>
 
 
 
