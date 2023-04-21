@@ -24,9 +24,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-sdf$=ffdk4ow67*t2anl)dk9n-#ze^3vp(+mgwx0w2(gjfe+rl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+DEBUG = True  # Default value for development environment
+
+if 'DJANGO_ENV' in os.environ:
+    if os.environ['DJANGO_ENV'] == 'production':
+        DEBUG = False
+
+
+ALLOWED_HOSTS = ['127.0.0.1','www.sarajfpc.org','sarajfpc.org','isfpcl.up.railway.app']
 
 
 # Application definition
