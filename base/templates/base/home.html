@@ -1,9 +1,38 @@
 {% extends 'main.html' %}
 {% load static %}
+
+{% block meta %}
+<title>Inner Saraj Faramer Producer Company</title>
+<meta name="description" content="The Inner Saraj Farmer Producer Company has 
+a set of primary objectives aimed at enhancing the welfare and interests of 
+its members. These objectives include a range of activities such as harvesting,
+ procurement, pooling, production, selling, grading,
+ handling, marketing, and exporting primary produce.The company also offers
+  machinery, equipment, and consumables to its members.">
+<meta name="keywords" content="Farmer Producer Company, FPC, Farmer Producer Company in Banjar kullu himachal pradesh,
+agricultural products, storage servie, rental service,Cold storage services,
+Fruit storage facilities,Agricultural equipment rentals">
+<meta property="og:title" content="Inner Saraj Farmer Producer Company">
+
+
+<meta property="og:description" content="The Inner Saraj Farmer Producer Company has 
+a set of primary objectives aimed at enhancing the welfare and interests of 
+its members. These objectives include a range of activities such as harvesting,
+ procurement, pooling, production, selling, grading,
+ handling, marketing, and exporting primary produce.The company also offers
+  machinery, equipment, and consumables to its members.">
+<meta property="og:image" content="{% static 'assets/images/team.jpeg' %}">
+  <meta name="robots" content="index,follow">
+
+
+
+{% endblock meta %}
+
 {% block css %}
 <link rel="stylesheet" href="{% static 'css/swiper-home.css' %}">
 
 {% endblock css %}
+
 {% block content %}
 
 <section class="hero-section">
@@ -130,6 +159,9 @@ data-aos-duration="3000">
                 <div class="activity-img">
                     <img src="{% static 'assets/images/supply.jpeg' %}" alt="">
                 </div>
+                <div class="activity-info">
+
+                
                 <h3 class="activity-title">
                     facilitation of input suplly
                 </h3>
@@ -141,19 +173,23 @@ data-aos-duration="3000">
 
                 </p>
             </div>
+        </div>
             <div class="single-activity" data-aos="fade-up"  data-aos-duration="3000">
                 <div class="activity-img">
                     <img src="{% static 'assets/images/perisimmon.jpeg' %}" alt="">
                 </div>
-                <h3 class="activity-title">
-                    Facilitting Collective Marketing
-                </h3>
-                <p>
-                    We will facilitate collective marketing of Apple and Persimmion 
-                    produced by member-farmers, which aims to address the problem of  small marketingsurplus
-                    and high transportation cost.
+                <div class="activity-info">
 
-                </p>
+                    <h3 class="activity-title">
+                        Facilitating Collective Marketing
+                    </h3>
+                    <p>
+                        We will facilitate collective marketing of Apple and Persimmion 
+                        produced by member-farmers, which aims to address the problem of  small marketingsurplus
+                        and high transportation cost.
+                        
+                    </p>
+                </div>
             </div>
         </div>
     </section>

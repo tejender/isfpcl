@@ -133,6 +133,7 @@ img{
 
  .activity-info p{
   min-height: 100px;
+  line-height: 1.7rem;
  }
  .btn-activity{
   margin: 0 auto;
@@ -665,7 +666,7 @@ footer .footer-container{
 
 .quick-links ul{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap:10px;
 }
 
@@ -674,12 +675,15 @@ footer .footer-container{
   gap: 10px;
   /* font-size: 1.1rem; */
   align-items: center;
+  width: 32%;
 }
 
 .quick-links ul li i{
   color: #B4E330;
 }
-
+.quick-links ul li a:hover{
+  background-color: transparent;
+}
 .contact-info ul{
   display: flex;
   flex-direction: column;

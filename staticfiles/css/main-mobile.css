@@ -128,9 +128,10 @@
 
     /* storage-service-page */
 
-    section.service-content .service-description p{
+    section.service-content .service-description p, .about-left p{
         font-size: 1rem;
         line-height: 1.8rem;
+        
       }
 
     .service-content .service-wrapper{

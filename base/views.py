@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+
 # Create your views here.
 def Home(request):
     active_page = 'home'
@@ -213,3 +214,7 @@ def About(request):
     active_page='about'
     context={'active_page':active_page}
     return render(request, 'base/about.html',context)
+
+
+def Sitemap(request):
+   return render(request, 'base/sitemap.html')
